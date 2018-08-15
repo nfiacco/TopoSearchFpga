@@ -1,0 +1,6 @@
+vhdl work "../Lab5/RS_FSM.vhd"
+vhdl work "../Lab5/generic_counter.vhd"
+vhdl work "../Lab5/GenericShiftReg.vhd"
+vhdl work "../Lab5/double_flop_sync.vhd"
+vhdl work "parallel_load_reg.vhd"
+vhdl work "../Lab5/SerialRX.vhd"

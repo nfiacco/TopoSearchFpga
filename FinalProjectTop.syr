@@ -1,0 +1,1072 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: FinalProjectTop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FinalProjectTop.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FinalProjectTop"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : FinalProjectTop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\small_mux.vhd" into library work
+Parsing entity <small_mux>.
+Parsing architecture <Behavioral> of entity <small_mux>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\short_bus8bit.vhd" into library work
+Parsing package <short_bus8bit>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\parallel_load_reg.vhd" into library work
+Parsing entity <parallel_load_reg>.
+Parsing architecture <Behavioral> of entity <parallel_load_reg>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\generic_sub.vhd" into library work
+Parsing entity <generic_sub>.
+Parsing architecture <Behavioral> of entity <generic_sub>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\FlipFlop.vhd" into library work
+Parsing entity <FlipFlop>.
+Parsing architecture <Behavioral> of entity <flipflop>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\data_bus9bit.vhd" into library work
+Parsing package <data_bus9bit>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\data_bus2bit.vhd" into library work
+Parsing package <data_bus2bit>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\RS_FSM.vhd" into library work
+Parsing entity <RS_FSM>.
+Parsing architecture <Behavioral> of entity <rs_fsm>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\generic_counter.vhd" into library work
+Parsing entity <generic_counter>.
+Parsing architecture <Behavioral> of entity <generic_counter>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\GenericShiftReg.vhd" into library work
+Parsing entity <GenericShiftReg>.
+Parsing architecture <Behavioral> of entity <genericshiftreg>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\double_flop_sync.vhd" into library work
+Parsing entity <double_flop_sync>.
+Parsing architecture <Behavioral> of entity <double_flop_sync>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\UnitCell.vhd" into library work
+Parsing entity <UnitCell>.
+Parsing architecture <Behavioral> of entity <unitcell>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\top_controller.vhd" into library work
+Parsing entity <top_controller>.
+Parsing architecture <Behavioral> of entity <top_controller>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\SlowClkGen.vhd" into library work
+Parsing entity <SlowClkGen>.
+Parsing architecture <Behavioral> of entity <slowclkgen>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\mux_4x2.vhd" into library work
+Parsing entity <mux_4x2>.
+Parsing architecture <Behavioral> of entity <mux_4x2>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\location_mux.vhd" into library work
+Parsing entity <location_mux>.
+Parsing architecture <Behavioral> of entity <location_mux>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\generic_decoder.vhd" into library work
+Parsing entity <address_decoder>.
+Parsing architecture <Behavioral> of entity <address_decoder>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\generic_comparator.vhd" into library work
+Parsing entity <generic_comparator>.
+Parsing architecture <Behavioral> of entity <generic_comparator>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\data_mux.vhd" into library work
+Parsing entity <data_mux>.
+Parsing architecture <Behavioral> of entity <data_mux>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\add_sub.vhd" into library work
+Parsing entity <generic_add_sub>.
+Parsing architecture <Behavioral> of entity <generic_add_sub>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\address_mux.vhd" into library work
+Parsing entity <address_mux>.
+Parsing architecture <Behavioral> of entity <address_mux>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\SerialRX.vhd" into library work
+Parsing entity <SerialRX>.
+Parsing architecture <Behavioral> of entity <serialrx>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\BaudRateGen.vhd" into library work
+Parsing entity <BaudRateGen>.
+Parsing architecture <Behavioral> of entity <baudrategen>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_controller.vhd" into library work
+Parsing entity <vga_controller>.
+Parsing architecture <Behavioral> of entity <vga_controller>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_color.vhd" into library work
+Parsing entity <vga_color>.
+Parsing architecture <Behavioral> of entity <vga_color>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\clock25div.vhd" into library work
+Parsing entity <clock25div>.
+Parsing architecture <Behavioral> of entity <clock25div>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\CellGridTop.vhd" into library work
+Parsing entity <CellGridTop>.
+Parsing architecture <Behavioral> of entity <cellgridtop>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\FinalProjectTop.vhd" into library work
+Parsing entity <FinalProjectTop>.
+Parsing architecture <Behavioral> of entity <finalprojecttop>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FinalProjectTop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CellGridTop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <top_controller> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\top_controller.vhd" Line 166: button should be on the sensitivity list of the process
+
+Elaborating entity <SlowClkGen> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <parallel_load_reg> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <address_decoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <generic_add_sub> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <location_mux> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <address_mux> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <data_mux> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mux_4x2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <small_mux> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <generic_comparator> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <UnitCell> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <generic_sub> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <parallel_load_reg> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <FlipFlop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SerialRX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <double_flop_sync> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <GenericShiftReg> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\GenericShiftReg.vhd" Line 72: reg_data should be on the sensitivity list of the process
+
+Elaborating entity <RS_FSM> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\RS_FSM.vhd" Line 98. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\RS_FSM.vhd" Line 134. Case statement is complete. others clause is never selected
+
+Elaborating entity <generic_counter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <generic_counter> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <BaudRateGen> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <clock25div> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <vga_color> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_color.vhd" Line 165: path should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_color.vhd" Line 166: cell should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_color.vhd" Line 173: cell should be on the sensitivity list of the process
+
+Elaborating entity <vga_controller> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FinalProjectTop>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\FinalProjectTop.vhd".
+    Summary:
+	no macro.
+Unit <FinalProjectTop> synthesized.
+
+Synthesizing Unit <CellGridTop>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\CellGridTop.vhd".
+    Summary:
+	no macro.
+Unit <CellGridTop> synthesized.
+
+Synthesizing Unit <top_controller>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\top_controller.vhd".
+    Found 3-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 22                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | reset_state                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  25 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <top_controller> synthesized.
+
+Synthesizing Unit <SlowClkGen>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\SlowClkGen.vhd".
+        RATE = 50
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_10_o_add_1_OUT> created at line 64.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <SlowClkGen> synthesized.
+
+Synthesizing Unit <parallel_load_reg_1>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\parallel_load_reg.vhd".
+        bit_width = 8
+    Found 8-bit register for signal <data>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <parallel_load_reg_1> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\generic_decoder.vhd".
+    Summary:
+	no macro.
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <generic_add_sub>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\add_sub.vhd".
+        bit_width = 8
+    Found 8-bit adder for signal <A[7]_B[7]_add_0_OUT> created at line 53.
+    Found 8-bit subtractor for signal <GND_13_o_GND_13_o_sub_2_OUT<7:0>> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <generic_add_sub> synthesized.
+
+Synthesizing Unit <location_mux>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\location_mux.vhd".
+    Found 2-bit 256-to-1 multiplexer for signal <data_out> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <location_mux> synthesized.
+
+Synthesizing Unit <address_mux>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\address_mux.vhd".
+    Found 9-bit 256-to-1 multiplexer for signal <data_out> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <address_mux> synthesized.
+
+Synthesizing Unit <data_mux>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\data_mux.vhd".
+    Found 1-bit 256-to-1 multiplexer for signal <data_out> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <data_mux> synthesized.
+
+Synthesizing Unit <mux_4x2>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\mux_4x2.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <data_out> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_4x2> synthesized.
+
+Synthesizing Unit <small_mux>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\small_mux.vhd".
+        bit_width = 8
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <small_mux> synthesized.
+
+Synthesizing Unit <generic_comparator>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\generic_comparator.vhd".
+        bit_width = 8
+    Found 8-bit comparator equal for signal <A[7]_B[7]_equal_1_o> created at line 54
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <generic_comparator> synthesized.
+
+Synthesizing Unit <UnitCell>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\UnitCell.vhd".
+INFO:Xst:3210 - "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\UnitCell.vhd" line 207: Output port <not_data_out> of the instance <PathFlop> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <UnitCell> synthesized.
+
+Synthesizing Unit <generic_sub>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\generic_sub.vhd".
+        bit_width = 8
+    Found 8-bit subtractor for signal <output> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <generic_sub> synthesized.
+
+Synthesizing Unit <parallel_load_reg_2>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\parallel_load_reg.vhd".
+        bit_width = 2
+    Found 2-bit register for signal <data>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <parallel_load_reg_2> synthesized.
+
+Synthesizing Unit <FlipFlop>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\FlipFlop.vhd".
+    Found 1-bit register for signal <data>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FlipFlop> synthesized.
+
+Synthesizing Unit <SerialRX>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\SerialRX.vhd".
+    Summary:
+	no macro.
+Unit <SerialRX> synthesized.
+
+Synthesizing Unit <double_flop_sync>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\double_flop_sync.vhd".
+    Found 1-bit register for signal <flop2>.
+    Found 1-bit register for signal <flop1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <double_flop_sync> synthesized.
+
+Synthesizing Unit <GenericShiftReg>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\GenericShiftReg.vhd".
+        bit_width = 10
+    Found 10-bit register for signal <reg_data>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <GenericShiftReg> synthesized.
+
+Synthesizing Unit <RS_FSM>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\RS_FSM.vhd".
+    Found 3-bit register for signal <current_state>.
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <RS_FSM> synthesized.
+
+Synthesizing Unit <generic_counter_1>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\generic_counter.vhd".
+        bit_width = 5
+        start_count = 8
+        default_value = 16
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_134_o_add_1_OUT> created at line 75.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <generic_counter_1> synthesized.
+
+Synthesizing Unit <generic_counter_2>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\generic_counter.vhd".
+        bit_width = 4
+        start_count = 0
+        default_value = 10
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_135_o_add_1_OUT> created at line 75.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <generic_counter_2> synthesized.
+
+Synthesizing Unit <BaudRateGen>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\BaudRateGen.vhd".
+        BAUDRATE = 115200
+    Found 1-bit register for signal <toggle_cap>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_137_o_add_2_OUT> created at line 66.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <BaudRateGen> synthesized.
+
+Synthesizing Unit <clock25div>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\clock25div.vhd".
+    Found 3-bit register for signal <count>.
+    Found 3-bit adder for signal <count[2]_GND_138_o_add_1_OUT> created at line 60.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <clock25div> synthesized.
+
+Synthesizing Unit <vga_color>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_color.vhd".
+    Found 32-bit comparator lessequal for signal <n0000> created at line 47
+    Found 32-bit comparator lessequal for signal <n0002> created at line 47
+    Found 32-bit comparator lessequal for signal <n0005> created at line 50
+    Found 32-bit comparator lessequal for signal <n0007> created at line 50
+    Found 32-bit comparator lessequal for signal <n0010> created at line 53
+    Found 32-bit comparator lessequal for signal <n0012> created at line 53
+    Found 32-bit comparator lessequal for signal <n0015> created at line 56
+    Found 32-bit comparator lessequal for signal <n0017> created at line 56
+    Found 32-bit comparator lessequal for signal <n0020> created at line 59
+    Found 32-bit comparator lessequal for signal <n0022> created at line 59
+    Found 32-bit comparator lessequal for signal <n0025> created at line 62
+    Found 32-bit comparator lessequal for signal <n0027> created at line 62
+    Found 32-bit comparator lessequal for signal <n0030> created at line 65
+    Found 32-bit comparator lessequal for signal <n0032> created at line 65
+    Found 32-bit comparator lessequal for signal <n0035> created at line 68
+    Found 32-bit comparator lessequal for signal <n0037> created at line 68
+    Found 32-bit comparator lessequal for signal <n0040> created at line 71
+    Found 32-bit comparator lessequal for signal <n0042> created at line 71
+    Found 32-bit comparator lessequal for signal <n0045> created at line 74
+    Found 32-bit comparator lessequal for signal <n0047> created at line 74
+    Found 32-bit comparator lessequal for signal <n0050> created at line 77
+    Found 32-bit comparator lessequal for signal <n0052> created at line 77
+    Found 32-bit comparator lessequal for signal <n0055> created at line 80
+    Found 32-bit comparator lessequal for signal <n0057> created at line 80
+    Found 32-bit comparator lessequal for signal <n0060> created at line 83
+    Found 32-bit comparator lessequal for signal <n0062> created at line 83
+    Found 32-bit comparator lessequal for signal <n0065> created at line 86
+    Found 32-bit comparator lessequal for signal <n0067> created at line 86
+    Found 32-bit comparator lessequal for signal <n0070> created at line 89
+    Found 32-bit comparator lessequal for signal <n0072> created at line 89
+    Found 32-bit comparator lessequal for signal <n0075> created at line 92
+    Found 32-bit comparator lessequal for signal <n0077> created at line 92
+    Found 32-bit comparator lessequal for signal <n0111> created at line 100
+    Found 32-bit comparator lessequal for signal <n0113> created at line 100
+    Found 32-bit comparator lessequal for signal <n0116> created at line 103
+    Found 32-bit comparator lessequal for signal <n0118> created at line 103
+    Found 32-bit comparator lessequal for signal <n0121> created at line 106
+    Found 32-bit comparator lessequal for signal <n0123> created at line 106
+    Found 32-bit comparator lessequal for signal <n0126> created at line 109
+    Found 32-bit comparator lessequal for signal <n0128> created at line 109
+    Found 32-bit comparator lessequal for signal <n0131> created at line 112
+    Found 32-bit comparator lessequal for signal <n0133> created at line 112
+    Found 32-bit comparator lessequal for signal <n0136> created at line 115
+    Found 32-bit comparator lessequal for signal <n0138> created at line 115
+    Found 32-bit comparator lessequal for signal <n0141> created at line 118
+    Found 32-bit comparator lessequal for signal <n0143> created at line 118
+    Found 32-bit comparator lessequal for signal <n0146> created at line 121
+    Found 32-bit comparator lessequal for signal <n0148> created at line 121
+    Found 32-bit comparator lessequal for signal <n0151> created at line 124
+    Found 32-bit comparator lessequal for signal <n0153> created at line 124
+    Found 32-bit comparator lessequal for signal <n0156> created at line 127
+    Found 32-bit comparator lessequal for signal <n0158> created at line 127
+    Found 32-bit comparator lessequal for signal <n0161> created at line 130
+    Found 32-bit comparator lessequal for signal <n0163> created at line 130
+    Found 32-bit comparator lessequal for signal <n0166> created at line 133
+    Found 32-bit comparator lessequal for signal <n0168> created at line 133
+    Found 32-bit comparator lessequal for signal <n0171> created at line 136
+    Found 32-bit comparator lessequal for signal <n0173> created at line 136
+    Found 32-bit comparator lessequal for signal <n0176> created at line 139
+    Found 32-bit comparator lessequal for signal <n0178> created at line 139
+    Found 32-bit comparator lessequal for signal <n0181> created at line 142
+    Found 32-bit comparator lessequal for signal <n0183> created at line 142
+    Found 32-bit comparator lessequal for signal <n0186> created at line 145
+    Found 32-bit comparator lessequal for signal <n0188> created at line 145
+    Found 8-bit comparator greater for signal <color_shade[7]_GND_141_o_LessThan_100_o> created at line 168
+    Found 8-bit comparator greater for signal <color_shade[7]_GND_141_o_LessThan_101_o> created at line 169
+    Found 8-bit comparator greater for signal <color_shade[7]_PWR_56_o_LessThan_102_o> created at line 170
+    Found 8-bit comparator greater for signal <color_shade[7]_PWR_56_o_LessThan_103_o> created at line 171
+    Found 8-bit comparator greater for signal <color_shade[7]_PWR_56_o_LessThan_104_o> created at line 172
+    Summary:
+	inferred  69 Comparator(s).
+	inferred  71 Multiplexer(s).
+Unit <vga_color> synthesized.
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\vga_controller.vhd".
+    Found 1-bit register for signal <vs>.
+    Found 32-bit register for signal <h_count>.
+    Found 32-bit register for signal <v_count>.
+    Found 3-bit register for signal <red>.
+    Found 3-bit register for signal <green>.
+    Found 2-bit register for signal <blue>.
+    Found 32-bit register for signal <column>.
+    Found 32-bit register for signal <row>.
+    Found 1-bit register for signal <hs>.
+    Found 32-bit adder for signal <h_count[31]_GND_142_o_add_3_OUT> created at line 53.
+    Found 32-bit adder for signal <v_count[31]_GND_142_o_add_4_OUT> created at line 55.
+    Found 32-bit subtractor for signal <h_count[31]_GND_142_o_sub_19_OUT<31:0>> created at line 80.
+    Found 32-bit subtractor for signal <v_count[31]_GND_142_o_sub_24_OUT<31:0>> created at line 88.
+    Found 32-bit comparator lessequal for signal <GND_142_o_h_count[31]_LessThan_1_o> created at line 39
+    Found 32-bit comparator lessequal for signal <GND_142_o_v_count[31]_LessThan_2_o> created at line 45
+    Found 32-bit comparator greater for signal <GND_142_o_h_count[31]_LessThan_3_o> created at line 52
+    Found 32-bit comparator greater for signal <h_count[31]_GND_142_o_LessThan_10_o> created at line 64
+    Found 32-bit comparator greater for signal <GND_142_o_h_count[31]_LessThan_11_o> created at line 64
+    Found 32-bit comparator greater for signal <v_count[31]_GND_142_o_LessThan_12_o> created at line 64
+    Found 32-bit comparator greater for signal <GND_142_o_v_count[31]_LessThan_13_o> created at line 64
+    Found 32-bit comparator greater for signal <GND_142_o_h_count[31]_LessThan_17_o> created at line 75
+    Found 32-bit comparator greater for signal <h_count[31]_GND_142_o_LessThan_18_o> created at line 77
+    Found 32-bit comparator greater for signal <GND_142_o_v_count[31]_LessThan_22_o> created at line 83
+    Found 32-bit comparator greater for signal <v_count[31]_GND_142_o_LessThan_23_o> created at line 85
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 138 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <vga_controller> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 269
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 6
+ 32-bit subtractor                                     : 2
+ 8-bit addsub                                          : 4
+ 8-bit subtractor                                      : 256
+# Registers                                            : 1049
+ 1-bit register                                        : 517
+ 10-bit register                                       : 1
+ 2-bit register                                        : 257
+ 3-bit register                                        : 3
+ 32-bit register                                       : 8
+ 8-bit register                                        : 263
+# Comparators                                          : 84
+ 32-bit comparator greater                             : 9
+ 32-bit comparator lessequal                           : 66
+ 8-bit comparator equal                                : 4
+ 8-bit comparator greater                              : 5
+# Multiplexers                                         : 1390
+ 1-bit 2-to-1 multiplexer                              : 316
+ 1-bit 256-to-1 multiplexer                            : 1
+ 2-bit 2-to-1 multiplexer                              : 768
+ 2-bit 256-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 30
+ 8-bit 2-to-1 multiplexer                              : 267
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 256-to-1 multiplexer                            : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <reg_data_0> of sequential type is unconnected in block <Shift_Reg>.
+
+Synthesizing (advanced) Unit <BaudRateGen>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <BaudRateGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SlowClkGen>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <SlowClkGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UnitCell>.
+The following registers are absorbed into counter <DelayReg/data>: 1 register on signal <DelayReg/data>.
+Unit <UnitCell> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock25div>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <clock25div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <generic_counter_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <generic_counter_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller>.
+The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
+The following registers are absorbed into counter <v_count>: 1 register on signal <v_count>.
+Unit <vga_controller> synthesized (advanced).
+WARNING:Xst:2677 - Node <reg_data_0> of sequential type is unconnected in block <GenericShiftReg>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 2
+ 8-bit addsub                                          : 4
+# Counters                                             : 262
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 5
+ 8-bit down counter                                    : 256
+# Registers                                            : 1198
+ Flip-Flops                                            : 1198
+# Comparators                                          : 84
+ 32-bit comparator greater                             : 9
+ 32-bit comparator lessequal                           : 66
+ 8-bit comparator equal                                : 4
+ 8-bit comparator greater                              : 5
+# Multiplexers                                         : 1129
+ 1-bit 2-to-1 multiplexer                              : 312
+ 1-bit 256-to-1 multiplexer                            : 1
+ 2-bit 2-to-1 multiplexer                              : 768
+ 2-bit 256-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 30
+ 8-bit 2-to-1 multiplexer                              : 11
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 256-to-1 multiplexer                            : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <CellGrid/Controller/FSM_0> on signal <current_state[1:3]> with user encoding.
+-----------------------------
+ State           | Encoding
+-----------------------------
+ reset_state     | 000
+ idle            | 001
+ header_check    | 010
+ receive_command | 011
+ cost_write      | 100
+ wait_finish     | 101
+ trace_state     | 110
+ done_state      | 111
+-----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Receiver/FSM_1> on signal <current_state[1:5]> with one-hot encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00001
+ brg_count | 00010
+ shift_in  | 00100
+ transfer  | 01000
+ done      | 10000
+-----------------------
+
+Optimizing unit <GenericShiftReg> ...
+
+Optimizing unit <FinalProjectTop> ...
+
+Optimizing unit <CellGridTop> ...
+
+Optimizing unit <UnitCell> ...
+
+Optimizing unit <top_controller> ...
+
+Optimizing unit <SerialRX> ...
+
+Optimizing unit <generic_counter_1> ...
+
+Optimizing unit <vga_controller> ...
+
+Optimizing unit <vga_color> ...
+WARNING:Xst:1293 - FF/Latch <CellGrid/rows[15].columns[0].bottomrow.bottomleft.UnitCellX/PrevLocationReg/data_1> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ColorControl/column_27> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_28> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_29> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_30> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_31> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_9> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_10> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_11> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_12> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_13> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_14> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_15> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_16> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_17> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_18> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_19> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_20> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_10> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_11> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_12> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_13> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_14> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_15> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_16> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_17> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_18> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_19> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_20> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_21> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_22> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_23> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_24> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_25> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/column_26> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_16> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_17> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_18> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_19> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_20> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_21> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_22> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_23> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_24> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_25> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_26> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_27> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_28> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_29> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_30> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_31> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clock25gen/count_2> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_21> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_22> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_23> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_24> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_25> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_26> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_27> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_28> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_29> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_30> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorControl/row_31> (without init value) has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_10> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_11> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_12> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_13> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_14> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ColorControl/h_count_15> has a constant value of 0 in block <FinalProjectTop>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <clock25gen/count_0> in Unit <FinalProjectTop> is equivalent to the following FF/Latch, which will be removed : <CellGrid/SlowGenerator/count_0> 
+INFO:Xst:2261 - The FF/Latch <clock25gen/count_1> in Unit <FinalProjectTop> is equivalent to the following FF/Latch, which will be removed : <CellGrid/SlowGenerator/count_1> 
+INFO:Xst:2261 - The FF/Latch <CellGrid/rows[15].columns[15].bottomrow.bottomright.UnitCellX/PrevLocationReg/data_0> in Unit <FinalProjectTop> is equivalent to the following FF/Latch, which will be removed : <CellGrid/rows[15].columns[15].bottomrow.bottomright.UnitCellX/PrevLocationReg/data_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FinalProjectTop, actual ratio is 96.
+FlipFlop ColorControl/column_1 has been replicated 1 time(s)
+FlipFlop ColorControl/column_2 has been replicated 2 time(s)
+FlipFlop ColorControl/column_3 has been replicated 4 time(s)
+FlipFlop ColorControl/column_4 has been replicated 4 time(s)
+FlipFlop ColorControl/column_5 has been replicated 4 time(s)
+FlipFlop ColorControl/column_6 has been replicated 3 time(s)
+FlipFlop ColorControl/column_7 has been replicated 4 time(s)
+FlipFlop ColorControl/column_8 has been replicated 4 time(s)
+FlipFlop ColorControl/column_9 has been replicated 3 time(s)
+FlipFlop ColorControl/row_1 has been replicated 1 time(s)
+FlipFlop ColorControl/row_2 has been replicated 1 time(s)
+FlipFlop ColorControl/row_3 has been replicated 3 time(s)
+FlipFlop ColorControl/row_4 has been replicated 3 time(s)
+FlipFlop ColorControl/row_5 has been replicated 3 time(s)
+FlipFlop ColorControl/row_6 has been replicated 2 time(s)
+FlipFlop ColorControl/row_7 has been replicated 2 time(s)
+FlipFlop ColorControl/row_8 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <FinalProjectTop> :
+	Found 2-bit shift register for signal <Receiver/Synchronizer/flop2>.
+	Found 2-bit shift register for signal <Receiver/Shift_Reg/reg_data_8>.
+Unit <FinalProjectTop> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3389
+ Flip-Flops                                            : 3389
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FinalProjectTop.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11746
+#      GND                         : 1
+#      INV                         : 281
+#      LUT1                        : 178
+#      LUT2                        : 113
+#      LUT3                        : 229
+#      LUT4                        : 730
+#      LUT5                        : 2525
+#      LUT6                        : 2389
+#      MUXCY                       : 2454
+#      MUXF7                       : 410
+#      MUXF8                       : 204
+#      VCC                         : 1
+#      XORCY                       : 2231
+# FlipFlops/Latches                : 3391
+#      FD                          : 44
+#      FDE                         : 11
+#      FDR                         : 320
+#      FDRE                        : 3016
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3391  out of  18224    18%  
+ Number of Slice LUTs:                 6447  out of   9112    70%  
+    Number used as Logic:              6445  out of   9112    70%  
+    Number used as Memory:                2  out of   2176     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6516
+   Number with an unused Flip Flop:    3125  out of   6516    47%  
+   Number with an unused LUT:            69  out of   6516     1%  
+   Number of fully used LUT-FF pairs:  3322  out of   6516    50%  
+   Number of unique control sets:       533
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 3393  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 13.195ns (Maximum Frequency: 75.788MHz)
+   Minimum input arrival time before clock: 3.193ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.195ns (frequency: 75.788MHz)
+  Total number of paths / destination ports: 37905227 / 9747
+-------------------------------------------------------------------------
+Delay:               13.195ns (Levels of Logic = 20)
+  Source:            ColorControl/row_6_1 (FF)
+  Destination:       ColorControl/green_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ColorControl/row_6_1 to ColorControl/green_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            30   0.447   1.511  ColorControl/row_6_1 (ColorControl/row_6_1)
+     LUT5:I1->O            1   0.203   0.000  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_lut<1> (ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<1> (ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<2> (ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<3> (ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<4> (ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<5> (ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<5>)
+     MUXCY:CI->O           4   0.213   0.788  ColorGen/Mcompar_row[31]_GND_141_o_LessThan_3_o_cy<6> (ColorGen/row[31]_GND_141_o_LessThan_3_o)
+     LUT2:I0->O            2   0.203   0.961  ColorGen/row[31]_GND_141_o_AND_530_o1 (ColorGen/row[31]_GND_141_o_AND_530_o)
+     LUT6:I1->O            6   0.203   0.745  ColorGen/cell3 (ColorGen/cell3)
+     LUT6:I5->O           19   0.205   1.072  ColorGen/cell7_2 (ColorGen/cell71)
+     LUT6:I5->O           21   0.205   1.218  ColorGen/Mmux_cell_address26_13 (ColorGen/Mmux_cell_address2612)
+     LUT6:I4->O            1   0.203   0.000  CellGrid/data_muxer/Mmux_data_out_1242 (CellGrid/data_muxer/Mmux_data_out_1242)
+     MUXF7:I1->O           1   0.140   0.000  CellGrid/data_muxer/Mmux_data_out_11_f7_26 (CellGrid/data_muxer/Mmux_data_out_11_f727)
+     MUXF8:I1->O           1   0.152   0.827  CellGrid/data_muxer/Mmux_data_out_10_f8_14 (CellGrid/data_muxer/Mmux_data_out_10_f815)
+     LUT6:I2->O            1   0.203   0.000  CellGrid/data_muxer/Mmux_data_out_55 (CellGrid/data_muxer/Mmux_data_out_55)
+     MUXF7:I1->O           1   0.140   0.000  CellGrid/data_muxer/Mmux_data_out_4_f7_1 (CellGrid/data_muxer/Mmux_data_out_4_f72)
+     MUXF8:I0->O          12   0.144   1.253  CellGrid/data_muxer/Mmux_data_out_2_f8_1 (cell_data<2>)
+     LUT6:I1->O            2   0.203   0.617  ColorGen/Mmux_color4121 (ColorGen/Mmux_color412)
+     LUT2:I1->O            1   0.205   0.580  ColorGen/Mmux_color31 (ColorGen/Mmux_color3)
+     LUT6:I5->O            1   0.205   0.000  ColorGen/Mmux_color34 (color<2>)
+     FDRE:D                    0.102          ColorControl/green_0
+    ----------------------------------------
+    Total                     13.195ns (3.624ns logic, 9.571ns route)
+                                       (27.5% logic, 72.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.193ns (Levels of Logic = 3)
+  Source:            button (PAD)
+  Destination:       CellGrid/Controller/current_state_FSM_FFd2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: button to CellGrid/Controller/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.879  button_IBUF (button_IBUF)
+     LUT5:I2->O            1   0.205   0.580  CellGrid/Controller/current_state_FSM_FFd2-In1 (CellGrid/Controller/current_state_FSM_FFd2-In1)
+     LUT6:I5->O            1   0.205   0.000  CellGrid/Controller/current_state_FSM_FFd2-In2 (CellGrid/Controller/current_state_FSM_FFd2-In)
+     FD:D                      0.102          CellGrid/Controller/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      3.193ns (1.734ns logic, 1.459ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            ColorControl/red_2 (FF)
+  Destination:       red<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ColorControl/red_2 to red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.447   0.579  ColorControl/red_2 (ColorControl/red_2)
+     OBUF:I->O                 2.571          red_2_OBUF (red<2>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   13.195|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 42.63 secs
+ 
+--> 
+
+Total memory usage is 340844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   76 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

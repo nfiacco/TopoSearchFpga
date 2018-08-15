@@ -1,0 +1,2 @@
+vhdl work "data_bus3bit.vhd"
+vhdl work "data_mux.vhd"

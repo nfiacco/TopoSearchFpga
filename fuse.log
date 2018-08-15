@@ -1,0 +1,54 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "O:/Documents/Xilinx/FinalProject/grid_tb_isim_beh.exe" -prj "O:/Documents/Xilinx/FinalProject/grid_tb_beh.prj" "work.grid_tb" 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/small_mux.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/short_bus8bit.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/parallel_load_reg.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/generic_sub.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/FlipFlop.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/data_bus9bit.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/data_bus2bit.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/UnitCell.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/top_controller.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/SlowClkGen.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/mux_4x2.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/location_mux.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/generic_decoder.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/generic_comparator.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/data_mux.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/add_sub.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/address_mux.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/CellGridTop.vhd" into library work
+Parsing VHDL file "O:/Documents/Xilinx/FinalProject/grid_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package data_bus2bit
+Compiling package data_bus9bit
+Compiling package short_bus8bit
+Compiling architecture behavioral of entity top_controller [top_controller_default]
+Compiling architecture behavioral of entity SlowClkGen [\SlowClkGen(1000000)\]
+Compiling architecture behavioral of entity parallel_load_reg [\parallel_load_reg(8)\]
+Compiling architecture behavioral of entity address_decoder [address_decoder_default]
+Compiling architecture behavioral of entity generic_add_sub [\generic_add_sub(8)\]
+Compiling architecture behavioral of entity location_mux [location_mux_default]
+Compiling architecture behavioral of entity address_mux [address_mux_default]
+Compiling architecture behavioral of entity data_mux [data_mux_default]
+Compiling architecture behavioral of entity mux_4x2 [mux_4x2_default]
+Compiling architecture behavioral of entity small_mux [\small_mux(8)\]
+Compiling architecture behavioral of entity generic_comparator [\generic_comparator(8)\]
+Compiling architecture behavioral of entity generic_sub [\generic_sub(8)\]
+Compiling architecture behavioral of entity parallel_load_reg [\parallel_load_reg(2)\]
+Compiling architecture behavioral of entity FlipFlop [flipflop_default]
+Compiling architecture behavioral of entity UnitCell [unitcell_default]
+Compiling architecture behavioral of entity CellGridTop [cellgridtop_default]
+Compiling architecture behavior of entity grid_tb
+Time Resolution for simulation is 1ps.
+Compiled 39 VHDL Units
+Built simulation executable O:/Documents/Xilinx/FinalProject/grid_tb_isim_beh.exe
+Fuse Memory Usage: 43120 KB
+Fuse CPU Usage: 1388 ms

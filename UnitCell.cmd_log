@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "O:/Documents/Xilinx/FinalProject/UnitCell.xst" -ofn "O:/Documents/Xilinx/FinalProject/UnitCell.syr" 

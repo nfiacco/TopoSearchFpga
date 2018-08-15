@@ -1,0 +1,72 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to O:/Documents/Xilinx/FinalProject/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to O:/Documents/Xilinx/FinalProject/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: SerialRX.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\RS_FSM.vhd" into library work
+Parsing entity <RS_FSM>.
+Parsing architecture <Behavioral> of entity <rs_fsm>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\generic_counter.vhd" into library work
+Parsing entity <generic_counter>.
+Parsing architecture <Behavioral> of entity <generic_counter>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\GenericShiftReg.vhd" into library work
+Parsing entity <GenericShiftReg>.
+Parsing architecture <Behavioral> of entity <genericshiftreg>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\double_flop_sync.vhd" into library work
+Parsing entity <double_flop_sync>.
+Parsing architecture <Behavioral> of entity <double_flop_sync>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\FinalProject\parallel_load_reg.vhd" into library work
+Parsing entity <parallel_load_reg>.
+Parsing architecture <Behavioral> of entity <parallel_load_reg>.
+Parsing VHDL file "\\thayerfs.thayer.dartmouth.edu\f0019wr\Documents\Xilinx\Lab5\SerialRX.vhd" into library work
+Parsing entity <SerialRX>.
+Parsing architecture <Behavioral> of entity <serialrx>.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.57 secs
+ 
+--> 
+
+Total memory usage is 185052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

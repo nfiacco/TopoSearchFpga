@@ -1,0 +1,2 @@
+vhdl work "data_bus8bit.vhd"
+vhdl work "mux_4x2.vhd"

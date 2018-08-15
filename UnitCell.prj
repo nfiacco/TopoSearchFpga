@@ -1,0 +1,5 @@
+vhdl work "small_mux.vhd"
+vhdl work "parallel_load_reg.vhd"
+vhdl work "generic_sub.vhd"
+vhdl work "FlipFlop.vhd"
+vhdl work "UnitCell.vhd"

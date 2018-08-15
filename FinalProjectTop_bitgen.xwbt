@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=O:\Documents\Xilinx\FinalProject\FinalProjectTop.ncd
+OUTFILE=O:\Documents\Xilinx\FinalProject\FinalProjectTop.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=O:\Documents\Xilinx\FinalProject
+LICENSE=ISE
+USER_INFO=210643936_1777485687_210562918_764

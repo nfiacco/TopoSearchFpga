@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "O:/Documents/Xilinx/FinalProject/grid_tb_isim_beh.exe" -prj "O:/Documents/Xilinx/FinalProject/grid_tb_beh.prj" "work.grid_tb" 

@@ -1,0 +1,6 @@
+vhdl isim_temp "small_mux.vhd"
+vhdl isim_temp "parallel_load_reg.vhd"
+vhdl isim_temp "generic_comparator.vhd"
+vhdl isim_temp "FlipFlop.vhd"
+vhdl isim_temp "add_sub.vhd"
+vhdl isim_temp "UnitCell.vhd"

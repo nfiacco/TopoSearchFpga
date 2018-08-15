@@ -1,0 +1,2 @@
+vhdl work "add_sub.vhd"
+vhdl work "sub_tb.vhd"
